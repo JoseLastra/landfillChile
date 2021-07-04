@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<style>
+body {
+text-align: justify;
+min-height: 100vh;
+    margin: 0 auto;}
+ p {
+text-align: justify;
+ font-family: Arial;
+
+ }
+</style>
+<div id="disclaimer" class="section level2">
+<h2><strong>Disclaimer</strong></h2>
+<p>“Los mapas publicados en esta página, que se refieren o se relacionan con los límites y fronteras de Chile, no comprometen en modo alguno al Estado de Chile, de acuerdo al Artículo 2°, letra g del DFL N°83 de 1979, del Ministerio de Relaciones Exteriores.”</p>
+</div>
+<div id="información-general" class="section level2">
+<h2><strong>Información general</strong></h2>
+<p>La aplicación GEO1015 v1.0 está diseñada para el mapeo de variables cuantitativas cuyas unidades mínima de análisis (UMA) pueden ser <strong>comunas</strong> o <strong>manzanas censales</strong>. Por otra parte, este sistema permite la toma de decisiones a la hora de clasificar cada uno de los quiebres de nuestros datos para obtener resultados que se asemejen a la realidad.</p>
+<p>Usted dispone de todas las comunas del territorio nacional y las manzanas censales proporcionadas por el <a href="https://www.ine.cl/">Instituto Nacional de Estadísticas</a>. En base a estas capas de información usted puede agregar información y generar coropletas en torno a algún campo de tipo numérico. Adicionalmente puede modificar paletas de colores, rangos y quiebres junto con exportar su mapa en formato <strong>PNG</strong>.</p>
+</div>
+<div id="instrucciones-generales" class="section level2">
+<h2><strong>Instrucciones generales</strong></h2>
+<p>Debe seleccionar su unidad de análisis (UA) para indicar a la aplicación sobre que base cartográfica debe trabajar. Luego puede subir su tabla de atributos que debe disponer de un campo de unión según la UA de trabajo:</p>
+<ul>
+<li><strong>MANZENT</strong> si usted trabajará con manzanas censales dentro de una comuna.</li>
+<li><strong>COD_COM</strong> si trabajará a nivel de comunas dentro de una región.</li>
+</ul>
+<p>Ambos campos deben ser de tipo numérico para asegurar la íntegra vinculación con la información cartográfica oficial.</p>
+<p>El archivo puede subido puede tener extensión <strong>CSV</strong>, <strong>XLS</strong> o <strong>XLSX</strong> contemplando el campo de unión y el o los campos de interés para cartografiar. <strong><em>Importante:</em></strong> Si sube un arcvhivo <strong>CSV</strong>, asegúrese de seleccionar el separador correcto dentro de las tres opciones disponibles.</p>
+<p>Una vez cargada la información, usted verá una lista desplegable con los campos disponibles para visualizar en el mapa y puede proceder a realizar las modificaciones de visualización de su coropleta. Cuando haya finalizado con la personalización, puede oprimir el botón <strong>exportar mapa</strong> para descargarlo en formato <strong>PNG</strong>. Este último paso considera el tamaño por defecto de visualización en pantalla, siendo importante configurar adecuadamente la ventana previo a la exportación.</p>
+</div>
+
+
+<hr />
+<p style="text-align: center;">by <a href="https://github.com/JoseLastra">José A. Lastra</a></p>
+<p style="text-align: center;"><span style="color: #808080;"><em>jose.lastra@pucv.cl</em></span></p>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<p style="text-align: center;">
+    <a href="https://github.com/JoseLastra" class="fa fa-github"></a>
+</p>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

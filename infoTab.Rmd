@@ -1,0 +1,43 @@
+---
+title: ""
+author: ""
+date: ""
+output: 
+html_document:
+  includes:
+      after_body: footer.html
+---
+<style>
+body {
+text-align: justify}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+#`r format(Sys.time(), '%Y/%m/%d')`
+```
+
+## **Disclaimer**
+
+"Los mapas publicados en esta página, que se refieren o se relacionan con los límites y fronteras de Chile, no comprometen en modo alguno al Estado de Chile, de acuerdo al Artículo 2°, letra g del DFL N°83 de 1979, del Ministerio de Relaciones Exteriores."
+
+## **Información general**
+
+La aplicación GEO1015 v1.0 está diseñada para el mapeo de variables cuantitativas cuyas unidades mínima de análisis (UMA) pueden ser **comunas** o **manzanas censales**. Por otra parte, este sistema permite la toma de decisiones a la hora de clasificar cada uno de los quiebres de nuestros datos para obtener resultados que se asemejen a la realidad.
+
+Usted dispone de todas las comunas del territorio nacional y las manzanas censales proporcionadas por el [Instituto Nacional de Estadísticas](https://www.ine.cl/). En base a estas capas de información usted puede agregar información y generar coropletas en torno a algún campo de tipo numérico. Adicionalmente puede modificar paletas de colores, rangos y quiebres junto con exportar su mapa en formato **PNG**.
+
+## **Instrucciones generales**
+
+Debe seleccionar su unidad de análisis (UA) para indicar a la aplicación sobre que base cartográfica debe trabajar. Luego puede subir su tabla de atributos que debe disponer de un campo de unión según la UA de trabajo:
+
+- **MANZENT** si usted trabajará con manzanas censales dentro de una comuna.
+- **COD_COM** si trabajará a nivel de comunas dentro de una región.
+
+Ambos campos deben ser de tipo numérico para asegurar la íntegra vinculación con la información cartográfica oficial.
+
+El archivo puede subido puede tener extensión **CSV**, **XLS** o **XLSX** contemplando el campo de unión y el o los campos de interés para cartografiar. ***Importante:*** Si sube un arcvhivo **CSV**, asegúrese de seleccionar el separador correcto dentro de las tres opciones disponibles.
+
+Una vez cargada la información, usted verá una lista desplegable con los campos disponibles para visualizar en el mapa y puede proceder a realizar las modificaciones de visualización de su coropleta. Cuando haya finalizado con la personalización, puede oprimir el botón **exportar mapa** para descargarlo en formato **PNG**. Este último paso considera el tamaño por defecto de visualización en pantalla, siendo importante configurar adecuadamente la ventana previo a la exportación.
+
+
